@@ -1,3 +1,4 @@
+package PatternQuestions;
 // Pattern
 // for n = 4
 // 4	4	4	4	4	4	4	
@@ -45,5 +46,6 @@ public class Pattern100 {
         cons+=2;
       }
     }
+    scn.close();
   }
 }
