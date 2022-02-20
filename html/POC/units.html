@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        font-size:25px;
+    }
+    /* html{
+        font-size:50px;
+    } */
+    .box{
+        background-color: yellow;
+        margin:10px;
+    }
+    .px{
+        width:200px;
+    }
+    .vw{
+        width:10vw;
+    }
+    .em{
+        width:10em;
+    }
+    .rem{
+        width:10rem;
+    }
+    .ems li{
+        font-size:1.5em;
+    }
+    .rems li{
+        font-size:1.5rem;
+    }
+    body{
+        background-color:rgb(29, 190, 190);
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="box px">I am 200 px wide</div>
+        <div class="box vw">I am 10 vw wide</div>
+        <div class="box em">I am 10 em wide</div>
+        <div class="box rem"> I am 10 rem wide</div>
+    </div>
+    
+    <ul class="rems">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three
+            <ul>
+                <li>Three a</li>
+                <li>Three b</li>
+                <li>Three c
+                    <ul>
+                        <li>Three c a</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="ems">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three
+            <ul>
+                <li>Three a</li>
+                <li>Three b</li>
+                <li>Three c
+                    <ul>
+                        <li>Three c a</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

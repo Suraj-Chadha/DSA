@@ -1,0 +1,39 @@
+.navbar{
+    display:flex;
+    justify-content: space-between;
+}
+ul{
+    display:flex;
+}
+li{
+    list-style: none;
+    margin-left:2rem;
+    font-size: 1.33rem;
+}
+.main>img{
+    width:95vw;
+    height:100vh;
+
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+.skills{
+    display:flex;
+    /* margin-top: 1rem; */
+}
+.skills>div{
+    text-align:center;
+    margin-top: 1rem;
+    /* display:flex; */
+    /* flex-direction: column-reverse; */
+}
+.footer{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    /* text-align:center; */
+    background-color: black;
+    color:white;
+    font-size: 1.5rem;
+    /* height:4rem; */
+}

@@ -1,0 +1,46 @@
+/* 
+.largeText{
+    color:black;
+    font-size: 30px;
+    font-family: fantasy;
+    background-color: red;
+}
+.colorText{
+    font-family: monospace;
+    font-size: 50px;
+    color:tomato;
+    background-color: black;
+}
+.largeText.colorText{
+    color:yellow;
+}
+ */
+
+/* *{
+    background-color: black;
+    color:white;
+} */
+/* h4{
+    background-color: black;
+    color:indianred;
+}
+a{
+    background-color: black;
+    color:indianred;
+}
+h3{
+    background-color: black;
+    color:indianred;
+} */
+/* h4,a,h3{
+    background-color: black;
+    color:yellow;
+} */
+body{
+    color:blue;
+    background-color: orange;
+}
+*{
+    color:gray;
+    background-color: red;
+}
