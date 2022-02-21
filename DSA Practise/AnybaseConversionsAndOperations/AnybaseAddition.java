@@ -10,7 +10,7 @@ public class AnybaseAddition {
         int carry = 0;
         int p = 1;
         int ans = 0;
-        while(num1 !=0 || num2 !=0 || carry != 0){
+        while(num1 > 0 || num2 > 0 || carry > 0){
             int d1 = num1 % 10;
             int d2 = num2 % 10;
             int sum = d1 + d2 + carry ;
