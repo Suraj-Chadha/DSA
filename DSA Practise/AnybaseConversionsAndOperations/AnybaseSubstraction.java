@@ -13,10 +13,12 @@ public class AnybaseSubstraction {
             num1 /= 10;
             num2 /= 10;
             int diff = d2 - d1 - borrow;
-            borrow = 0;
+            
             if(diff < 0){
                 borrow = 1;
                 diff+=b;
+            }else{
+                borrow = 0;
             }
             ans += diff * p;
             p = p * 10;
