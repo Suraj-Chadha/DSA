@@ -5,27 +5,25 @@ public class BinarySearch {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
         int[] arr = new int[n];
-        for(int i = 0; i < arr.length; i++ ){
+        for(int i = 0; i < arr.length; i++){
             arr[i] = scn.nextInt();
         }
-        int d = scn.nextInt();
-        int index = findEle(arr,d);
-        System.out.println(index);
-        scn.close();
-    }
-    public static int findEle(int[] arr, int d){
-        int left = 0;
-        int right = arr.length - 1;
-        while(left <= right){
-            int mid = (left + right)/2;
-            if(arr[mid] == d){
-                return mid;
-            }else if(arr[mid] < d){
-                left = mid+1;
+        int data = scn.nextInt();
+        int lo = 0;
+        int hi = arr.length - 1;
+        int foundAt = -1;
+        while( lo <= hi ){
+            int mid = hi + (lo - hi)/2;
+            if(data < arr[mid]){
+                hi = mid - 1;
+            }else if(data > arr[mid]){
+                lo = mid + 1;
             }else{
-                right = mid - 1;
+                foundAt = mid;
+                break;
             }
         }
-        return -1;
+        System.out.println(foundAt);
+        scn.close();
     }
 }
