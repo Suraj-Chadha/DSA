@@ -1,5 +1,5 @@
 package Arrays;
-import java.util.*;
+// import java.util.*;
 import java.io.*;
 public class reverseArray {
     public static void display(int[] a){
