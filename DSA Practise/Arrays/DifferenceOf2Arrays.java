@@ -1,5 +1,4 @@
 package Arrays;
-import java.io.*;
 import java.util.*;
 public class DifferenceOf2Arrays {
     public static Scanner scn = new Scanner(System.in);
