@@ -16,6 +16,7 @@ public class Rotate90Degree{
         Display(arr);
         RotateArr(arr);
         Display(arr);
+        scn.close();
     }
     public static void RotateArr(int[][]arr){
         int left = 0;
