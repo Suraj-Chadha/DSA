@@ -1,0 +1,58 @@
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    margin-left: 1.5rem;
+    font-weight:400;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    margin-right: 1rem;
+}
+li{
+    list-style: none;
+    margin-left: 2rem;
+    padding-top:8px;
+    font-size: 1.33rem;
+}
+li>a:link, li>a:visited{
+    text-decoration: none;
+    color: black;
+}
+li>a:hover{
+    text-decoration: none;
+    color: crimson;
+}
+img[alt="Its an image describing a student's table"]{
+    width: 95vw;
+    height: 100vh;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+.skills{
+    display: flex;
+}
+.skills>div{
+    text-align: center;
+    margin-top: 1.5rem;
+    width:30vw;
+    margin-left:1.5rem;
+}
+.skills>div>p{
+    padding:1rem;
+}
+.footer{
+    display:flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    /* text-align: center; */
+    /* height:4rem;
+    padding-top: 1rem; */
+    align-items: center;
+    height: 4rem;
+}
