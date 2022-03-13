@@ -21,13 +21,24 @@
 //   console.log(functionWithArgs("Hello ","World"));
 
 
-function myLocalScope() {
-    // Only change code below this line
-    let myVar = 10;
-    console.log('inside myLocalScope', myVar);
-  }
-  myLocalScope();
+// function myLocalScope() {
+//     // Only change code below this line
+//     let myVar = 10;
+//     console.log('inside myLocalScope', myVar);
+//   }
+//   myLocalScope();
   
-  // Run and check the console
-  // myVar is not defined outside of myLocalScope
-  console.log('outside myLocalScope', myVar);
+//   // Run and check the console
+//   // myVar is not defined outside of myLocalScope
+//   console.log('outside myLocalScope', myVar);
+
+
+
+let str = "Suraj Chadha";
+// let string = str.splice(2,7);
+
+console.log(string);
+
+
+//check if -s present
+
