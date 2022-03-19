@@ -3,6 +3,7 @@ let command = inputArr[0];
 let path = inputArr[1];
 const organizedFunc = require("./commands/organize");
 const helpFunc = require("./commands/help");
+const printTree = require("./commands/tree");
 
 switch(command){
     case "help":
@@ -14,7 +15,8 @@ switch(command){
         organizedFunc.organize(path);
         break;
     case "tree":
-        console.log("tree function called and executed succesfully on path " + path);
+        // console.log("tree function called and executed succesfully on path " + path);
+        printTree.tree(path);
         break;
     default:
         console.log("command not recogonized");
