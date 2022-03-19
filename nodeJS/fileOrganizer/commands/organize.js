@@ -44,6 +44,7 @@ function getFolderName(ext){
             }
         }
     }
+    return "miscellaneous";
     
 }
 function copySrcToDest(srcPath, fullPathOfFile, folderName){
@@ -58,5 +59,9 @@ function copySrcToDest(srcPath, fullPathOfFile, folderName){
 }
 
 
-let srcPath = "/home/beast007/PepCoding/DSA-and-Dev/nodeJS/fileOrganizer/downloads";
-organize(srcPath);
+// let srcPath = "/home/beast007/PepCoding/DSA-and-Dev/nodeJS/fileOrganizer/downloads";
+// organize(srcPath);
+
+module.exports = {
+    organize: organize
+}
