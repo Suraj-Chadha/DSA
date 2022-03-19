@@ -8,7 +8,7 @@ switch(command){
         // console.log("help function called and executed succesfully on path " + path);
         helpFunc.help();
         break;
-    case "organizer":
+    case "organize":
         console.log("organizer function called and executed succesfully on path " + path);
         break;
     case "tree":
