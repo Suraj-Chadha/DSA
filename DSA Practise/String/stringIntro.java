@@ -1,4 +1,5 @@
 // string is nothing but collection(array) of characters
+package String;
 import java.util.*;
 public class stringIntro {
    public static void main(String[] args){

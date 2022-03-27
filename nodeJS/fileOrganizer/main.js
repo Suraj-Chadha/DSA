@@ -8,7 +8,7 @@ const printTree = require("./commands/tree");
 switch(command){
     case "help":
         // console.log("help function called and executed succesfully on path " + path);
-        helpFunc.help();
+        helpFunc.help(); 
         break;
     case "organize":
         // console.log("organizer function called and executed succesfully on path " + path);

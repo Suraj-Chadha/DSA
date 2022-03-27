@@ -25,12 +25,10 @@ function printTree(srcPath, dirData, idx){
         let dir = fs.readdirSync(fullPathOfFile);
         printTree(fullPathOfFile, dir, 0);
     }
-    // recursive call for next element in the array
+    // faith --- > recursive call for next element in the array
     printTree(srcPath, dirData, idx+1);
 }
 module.exports = {
     tree:tree,
 }
 
-// let srcPath = "/home/beast007/PepCoding/DSA-and-Dev/nodeJS/fileOrganizer/downloads";
-// tree(srcPath);

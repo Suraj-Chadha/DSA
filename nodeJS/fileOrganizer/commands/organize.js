@@ -64,4 +64,4 @@ function copySrcToDest(srcPath, fullPathOfFile, folderName){
 
 module.exports = {
     organize: organize
-}
+} 

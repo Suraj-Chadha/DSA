@@ -1,4 +1,5 @@
 // study the exception case of String in java Why input fails the ideal scenario
+package String;
 import java.util.*;
 public class StringExceptionCaseOfTakingInput {
     public static void main(String[] args){
