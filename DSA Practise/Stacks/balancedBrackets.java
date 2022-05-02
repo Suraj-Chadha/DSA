@@ -1,4 +1,4 @@
-// package ;
+package Stacks;
 
 import java.util.*;
 
@@ -6,6 +6,7 @@ public class balancedBrackets{
     public static void main(String[] args){
         Scanner scn = new Scanner(System.in);
         String str = scn.nextLine();
+        scn.close();
         Stack<Character> st = new Stack<>();
         for(char ch: str.toCharArray()){
             if(ch == '(' || ch == '[' || ch == '{'){
