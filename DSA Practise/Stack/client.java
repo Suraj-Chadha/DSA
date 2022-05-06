@@ -5,11 +5,12 @@ public class client {
 
         // st.top(); throws Exception
         Scanner scn = new Scanner(System.in);
-        int n = scn.nextInt();
-        stacks st = new stacks(n);
-        st.push(5);
+        // int n = scn.nextInt();
+        DynamicStack st = new DynamicStack();
+        // st.pop();
+        // st.push(5);
         scn.close();
-        for(int i = 1; i <= n; i++){
+        for(int i = 1; i <= 15; i++){
             st.push(i*10);
         }
         // System.out.println(st.size());

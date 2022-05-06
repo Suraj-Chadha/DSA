@@ -15,10 +15,14 @@ public class stacks{
         initialize(size);
     }
     public void initialize(int size){
+        System.out.println(size);
         this.arr = new int[size];
         this.arrSize = size;
         this.stackSize = 0;
         this.tos = -1;
+    }
+    protected int arrSize(){
+        return arrSize;
     }
 
     // Exceptions
