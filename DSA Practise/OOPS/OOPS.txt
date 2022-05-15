@@ -1,0 +1,20 @@
+OOPS -> Object Oriented Programming language
+we can segregate program into modules based on their behaviour
+
+Class -> class is a construct that we may use to make objects/instances. It uses concept of encapsulation which is it contains both data Members (Variables) and functions (Methods).
+
+Encapsulation --> Encapsulation in Java is a mechanism of wrapping the data (variables) and code acting on the data (methods) together as a single unit. I 
+
+Object --> (Instance Concept + Reference Concept) ka combined concept is called an object.
+
+Instance --> Instance is nothing but a memory created on heap with respect to a class and will be used to describe an object
+
+reference --> Reference is the variable that gets created in stack and is pointing to the instance of the class.
+
+this -> this points to current instance of the class/ this points to the object and can be used to call data members and methods of a particular instance.
+
+new Operator -> new operator works on classes and creates the above mentioned instance/ objects of classes in heap memory and returns the address to the reference.
+
+Data Members --> stores the data of the class, in real life it can be compared with adjectives/adverbs.. say a class of person can have attributes like age,name,height,weight
+
+Methods --> method defines what a class can do. like for a person class, a person can walk, talk, sayHi, run, exercise, study, play, sleep
