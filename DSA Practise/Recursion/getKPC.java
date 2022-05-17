@@ -8,6 +8,7 @@ public class getKPC {
         ArrayList<String> words = getkpc(str);
         // System.out.println(words.size());
         System.out.println(words);
+        scn.close();
     }
     static String[] codes = {".;","abc","def","ghi","jkl","mno","pqrs","tu","vwx","yz"};
     //345
