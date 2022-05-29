@@ -13,6 +13,7 @@ let isModalPresent = false;
 addBtn.addEventListener('click', function () {
     if (!isModalPresent) {
         modalCont.style.display = "flex"; //modal add ho gya screen pe
+
         // isModalPresent = true;
     } else {
         modalCont.style.display = "none";
@@ -57,7 +58,7 @@ function createTicket(ticketColor, data) {
     ticketCont.setAttribute("class", "ticket-cont");
     ticketCont.innerHTML = `
         <div class="ticket-color ${ticketColor} "></div>
-        <div class="ticket-id"></div>
+        <div class="ticket-id">/div>
         <div class="task-area">${data}</div>
     `;
 

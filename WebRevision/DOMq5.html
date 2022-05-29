@@ -1,0 +1,36 @@
+<!-- On mous hover to the div box we have to show a picture of a dog and on mouse getting out of the div box make the picture dissapear -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .cell {
+            border: 1px solid;
+            margin: auto;
+            margin-top: 10rem;
+            height: 20rem;
+            width: 20rem;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cell"></div>
+    
+</body>
+<script>
+   let cell = document.querySelector('.cell');
+   cell.addEventListener('mouseover', function(){
+       cell.style.background='url(./download.jpeg)';
+   })
+   cell.addEventListener('mouseout', function(){
+       cell.style.background='none';
+   })
+</script>
+</html>
