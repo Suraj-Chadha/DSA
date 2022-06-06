@@ -1,13 +1,9 @@
-let clargs = process.argv;
+let clargs = process.argv; // process.argv --> command line ke arguments ... alternative --> minimist
+// console.log(clargs[1]);
 let n = parseInt(clargs[2]);
-let arr = [];
+// console.log(n);
+let arr=[];
 for(let i = 0; i < n; i++){
-    // arr[i] = parseInt(clargs[3+i]);
-    arr.push(parseInt(clargs[3+i]));
+    arr.push(parseInt(clargs[i+3]));
 }
-arr.length = 10;
-console.log(arr.length);
 console.log(arr);
-for(let x in arr){
-    console.log(arr[x]);
-}
