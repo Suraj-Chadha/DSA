@@ -65,8 +65,6 @@ public class MultisolverGraph {
       System.out.println(k + "th largest path = " + pq.peek().psf + "@" + pq.peek().wsf);
    }
 
-
-
    static String spath;
    static Integer spathwt = Integer.MAX_VALUE;
    static String lpath;

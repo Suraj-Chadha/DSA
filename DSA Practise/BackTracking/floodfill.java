@@ -1,35 +1,37 @@
 import java.util.*;
-public class floodfill {
-    public static void main(String[] args){
-        Scanner scn = new Scanner(System.in);
-        int n = scn.nextInt();
-        int m = scn.nextInt();
-        int[][] mat = new int[n][m];
+import java.io.*;
+public class floodfill{
+    
+    public static void main(String[] args) throws Exception{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String[] str = br.readLine().split(" ");
+        int n = Integer.parseInt(str[0]);
+        int m = Integer.parseInt(str[1]);
+        int[][] arr = new int[n][m];
+
         for(int i = 0; i < n; i++){
+            str = br.readLine().split(" ");
             for(int j = 0; j < m; j++){
-                mat[i][j] = scn.nextInt();
+                arr[i][j] = Integer.parseInt(str[j]);
             }
         }
-        floodFillSolution(mat,0,0,"");
+
+        floodFill(0,0,arr,"");
     }
+    public static void floodFill(int sr, int sc, int[][] arr, String psf){
 
-    public static void floodFillSolution(int[][] arr, int sr, int sc, String asf){
-
-        if(sr == arr.length-1 && sc == arr[0].length){
-            System.out.println(asf);
+        if(sr < 0 || sr >= arr.length || sc < 0 || sc >= arr[0].length || arr[sr][sc] == 1){
             return;
         }
-
-        if(sr < 0 || sr >= arr.length || sc < 0 || sc >= arr.length || arr[sr][sc] == 1){
+        if(sr == arr.length-1 && sc == arr[0].length-1){
+            System.out.println(psf);
             return;
         }
-
         arr[sr][sc] = 1;
-        floodFillSolution(arr,sr-1,sc,asf+"t"); // top
-        floodFillSolution(arr,sr,sc-1,asf+"l"); // left
-        floodFillSolution(arr,sr+1,sc,asf+"d"); // down
-        floodFillSolution(arr,sr,sc+1,asf+"r"); // right
+        floodFill(sr-1,sc,arr,psf+"t"); // top
+        floodFill(sr,sc-1,arr,psf+"l"); //left
+        floodFill(sr+1,sc,arr,psf+"d"); // down
+        floodFill(sr,sc+1,arr,psf+"r"); //right
         arr[sr][sc] = 0;
-
     }
-}
+}   
