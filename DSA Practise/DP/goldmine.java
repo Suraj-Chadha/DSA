@@ -13,23 +13,30 @@ public class goldmine {
             }
         }
 
-        int[][] strg = new int[n][m];
-        for(int i = m - 1; i >= 0; i--){
-            for(int j = 0; j <= n-1; j++){
-                if(i == m-1){
-                    strg[j][i] = mine[j][i];
-                }else if(j == 0){
-                    strg[j][i] = mine[j][i] + Math.max(strg[j][i+1], strg[j+1][i+1]);
-                }else if(j == n-1){
-                    strg[j][i] = mine[j][i] + Math.max(strg[j][i+1], strg[j-1][i+1]);
-                }else{
-                    strg[j][i] = mine[j][i] + Math.max(strg[j+1][i+1] ,Math.max(strg[j][i+1], strg[j-1][i+1]));
+        int[][] dir = {{0,1}, {-1,1}, {1,1}};
+
+        int[][] dp = new int[n][m];
+        for(int sc = m - 1; sc >= 0; sc--){
+            for(int sr = n-1; sr >= 0; sr--){
+                if(sc == m-1){
+                    dp[sr][sc] = mine[sr][sc];
+                    continue;
                 }
+                int max = Integer.MIN_VALUE;
+                for(int d = 0; d < dir.length; d++){
+                    int r = sr + dir[d][0];
+                    int c = sc + dir[d][1];
+
+                    if(r >= 0 && c >= 0 && r <= n-1 && c <= m-1){
+                        max = Math.max(max, mine[sr][sc] + dp[r][c]);
+                    }
+                }
+                dp[sr][sc] =  max;
             }
         }
         int max = Integer.MIN_VALUE;
         for(int i = 0; i < n; i++){
-            max = Math.max(max, strg[i][0]);
+            max = Math.max(max, dp[i][0]);
         }
         System.out.println(max);
     }
