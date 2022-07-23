@@ -18,8 +18,8 @@ public class minimumCostInMazeTraversal {
         }
 
         int[][] strg = new int[n][m];
-        int min = mazeTraverse_tabulation(mat, strg, n, m);
-        // int min = mazetraversal_memoization(mat, strg, n-1, m-1);
+        // int min = mazeTraverse_tabulation(mat, strg, n, m);
+        int min = mazetraversal_memoization(mat, new Integer[n][m], 0, 0);
         System.out.println(min);
     }
 
@@ -40,12 +40,23 @@ public class minimumCostInMazeTraversal {
         return strg[0][0];
     }
 
-    // public static int mazetraversal_memoization(int[][] mat, int[][] strg, int n, int m){
+    public static int mazetraversal_memoization(int[][] mat, Integer[][] strg, int n, int m){
 
-    //     int c = mat[n][m];
-        
-    //     mazetraversal_memoization(mat, strg, n-1, m);
-    //     mazetraversal_memoization(mat, strg, n, m-1);
+        if(n == strg.length-1 && m == strg[0].length-1){
+            return mat[n][m];
+        }
+        if(n >= strg.length || m >= strg[0].length ){
+            return Integer.MAX_VALUE;
+        }
+        if(strg[n][m] != null){
+            return strg[n][m];
+        }
+        int cr = mazetraversal_memoization(mat, strg, n, m+1);
+        int cd = mazetraversal_memoization(mat, strg, n+1, m);
+        int min = Math.min(cr,cd);
+        int res = mat[n][m] + min;
+        strg[n][m] = res;
+        return res;
 
-    // }
+    }
 }
